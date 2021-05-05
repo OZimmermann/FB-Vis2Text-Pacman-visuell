@@ -16,24 +16,5 @@ while (true) {
             . . # # .
             `)
         basic.pause(100)
-    } else if (input.buttonIsPressed(Button.B)) {
-        basic.showLeds(`
-            . # # . #
-            # # . # .
-            # # # . .
-            # # # # .
-            . # # . #
-            `)
-        basic.pause(100)
-        basic.showLeds(`
-            . # # . .
-            # # . # #
-            # # # # #
-            # # # # #
-            . # # . .
-            `)
-        basic.pause(100)
-    } else {
-        basic.showIcon(IconNames.Happy)
     }
 }
