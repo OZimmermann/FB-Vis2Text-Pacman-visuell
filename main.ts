@@ -7,40 +7,44 @@ function herzschlag (num: number) {
     }
 }
 function pacmanlinks () {
-    basic.showLeds(`
-        # . # # .
-        . # . # #
-        . . # # #
-        . # # # #
-        # . # # .
-        `)
-    basic.pause(100)
-    basic.showLeds(`
-        . . # # .
-        # # . # #
-        # # # # #
-        # # # # #
-        . . # # .
-        `)
-    basic.pause(100)
+    while (!(input.buttonIsPressed(Button.B))) {
+        basic.showLeds(`
+            # . # # .
+            . # . # #
+            . . # # #
+            . # # # #
+            # . # # .
+            `)
+        basic.pause(100)
+        basic.showLeds(`
+            . . # # .
+            # # . # #
+            # # # # #
+            # # # # #
+            . . # # .
+            `)
+        basic.pause(100)
+    }
 }
 function pacmanrechts () {
-    basic.showLeds(`
-        . # # . #
-        # # . # .
-        # # # . .
-        # # # # .
-        . # # . #
-        `)
-    basic.pause(100)
-    basic.showLeds(`
-        . # # . .
-        # # . # #
-        # # # # #
-        # # # # #
-        . # # . .
-        `)
-    basic.pause(100)
+    while (!(input.buttonIsPressed(Button.A))) {
+        basic.showLeds(`
+            . # # . #
+            # # . # .
+            # # # . .
+            # # # # .
+            . # # . #
+            `)
+        basic.pause(100)
+        basic.showLeds(`
+            . # # . .
+            # # . # #
+            # # # # #
+            # # # # #
+            . # # . .
+            `)
+        basic.pause(100)
+    }
 }
 while (!(input.buttonIsPressed(Button.AB))) {
     if (input.buttonIsPressed(Button.A)) {
