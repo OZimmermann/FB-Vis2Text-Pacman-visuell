@@ -1,6 +1,6 @@
 while (true) {
     if (input.buttonIsPressed(Button.A)) {
-        while (!(input.buttonIsPressed(Button.B)) && !(input.isGesture(Gesture.Shake))) {
+        while (!(input.buttonIsPressed(Button.B))) {
             basic.showLeds(`
                 # . # # .
                 . # . # #
@@ -19,7 +19,7 @@ while (true) {
             basic.pause(100)
         }
     } else if (input.buttonIsPressed(Button.B)) {
-        while (!(input.buttonIsPressed(Button.A)) && !(input.isGesture(Gesture.Shake))) {
+        while (!(input.buttonIsPressed(Button.A))) {
             basic.showLeds(`
                 . # # . #
                 # # . # .
@@ -37,7 +37,5 @@ while (true) {
                 `)
             basic.pause(100)
         }
-    } else if (input.isGesture(Gesture.Shake)) {
-        basic.showIcon(IconNames.Happy)
     }
 }
