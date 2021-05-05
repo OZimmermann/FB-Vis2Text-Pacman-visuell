@@ -44,11 +44,9 @@ function pacmanrechts () {
 }
 while (!(input.buttonIsPressed(Button.AB))) {
     if (input.buttonIsPressed(Button.A)) {
-        pacmanrechts()
-    } else if (input.buttonIsPressed(Button.B)) {
         pacmanlinks()
-    } else {
-        basic.showIcon(IconNames.Happy)
+    } else if (input.buttonIsPressed(Button.B)) {
+        pacmanrechts()
     }
 }
 herzschlag(4)
