@@ -46,11 +46,13 @@ function pacmanrechts () {
         basic.pause(100)
     }
 }
-while (!(input.buttonIsPressed(Button.AB))) {
-    if (input.buttonIsPressed(Button.A)) {
-        pacmanlinks()
-    } else if (input.buttonIsPressed(Button.B)) {
-        pacmanrechts()
+while (true) {
+    while (!(input.buttonIsPressed(Button.AB))) {
+        if (input.buttonIsPressed(Button.A)) {
+            pacmanlinks()
+        } else if (input.buttonIsPressed(Button.B)) {
+            pacmanrechts()
+        }
     }
+    herzschlag(4)
 }
-herzschlag(4)
