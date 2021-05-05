@@ -33,8 +33,6 @@ while (!(input.buttonIsPressed(Button.AB))) {
             . . # # .
             `)
         basic.pause(100)
-    } else {
-        basic.showIcon(IconNames.Happy)
     }
 }
 for (let index = 0; index < 4; index++) {
