@@ -1,5 +1,5 @@
 {
-    "name": "pacman-visuell",
+    "name": "FB-Vis2Text-Pacman-Visuell",
     "description": "",
     "dependencies": {
         "core": "*",
